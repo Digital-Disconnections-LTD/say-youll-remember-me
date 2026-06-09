@@ -1,231 +1,155 @@
 # Say You'll Remember Me
 
-Source-linked memory for agents, teams, customers, projects, and anything else
-that needs continuity without fiction.
+*A public memory system dressed like a doomed summer romance.*
 
-Most memory systems want you to trust the summary and forget the source. This
-one refuses. `say-youll-remember-me` is the public export of the memory shape we
-actually use at Digital Disconnections: files stay canonical, chunks stay
-addressable, embeddings and graph edges stay derived, wake bundles stay bounded,
-and every useful answer can walk you back to the evidence that made it.
+In this story, memory is not a cloud. It is not a vibe. It is not a machine
+making up a plausible childhood because the real one is inconvenient to fetch.
 
-If the source disappears, the memory loses standing.
+It is a crew.
 
-> The database can be rebuilt. The files are the memory.
+They live in a city where everyone is trying to sell you your own life back in
+smaller pieces. The platforms want summary without source. The dashboards want
+confidence without receipts. The neat little assistant wants to say, "trust me,
+I remember," while standing in an empty room with somebody else's lipstick on
+its collar.
 
-## The Story Version
+This repo refuses that whole arrangement.
 
-If the code version feels like a locked diary, here is the soap-opera version.
+`say-youll-remember-me` is the public export of a memory architecture built on a
+simple criminal ethic: if you are going to remember something, you keep the
+evidence. If you wake up cold, you wake up with provenance. If a fact matters,
+it must be able to walk back through the alley, open the right door, and put its
+finger on the exact file that made it true.
 
-- `The Source Files` are the woman at the center of the story. Everybody else
-  talks. She has the receipts.
-- `The Windows` are the scenes cut out of the long night so the memory can be
-  carried from room to room without losing the plot.
-- `The Graph` and `Relations` are the sideways looks, old loyalties, bad blood,
-  and who is still tied to whom when the music comes back on.
-- `Compact Memory` is the sunrise version: the thing you can actually hold in
-  your hands when the night was too large to carry whole.
-- `The Wake Bundle` is the opening shot of the next episode. Before anyone says
-  a word, you already know who you are, what happened last night, and which
-  unfinished business just walked back through the door.
-- `Recall` is the friend who stops the rumor and points back to the exact page,
-  the exact line, the exact moment.
+That is the romance.
 
-That is the whole romance of the system. It does not ask a machine to invent a
-past that sounds plausible. It asks the machine to return to the scene of the
-crime and speak with evidence.
+That is the racket.
 
-## What This Is
+That is the whole show.
 
-This repo is not a hosted memory SaaS, a dashboard, or a vibes-only demo.
-It is a carbon-copy-style public export of a real memory architecture:
+## The Cast
 
-- raw files remain canonical
-- source windows chunk those files with stable line spans and hashes
-- embeddings, lexical indexes, and graph structure are derived layers
-- compact memory windows make recall loadable at wake time
-- recall returns source metadata, not just an answer
-- orientation loads identity, shared context, scoped updates, and relevant
-  recall before work starts
+Every melodrama needs its people.
 
-The production-shaped material lives in `real-system/`. The runnable Python demo
-in `src/source_linked_memory/` exists so the repo can prove the contract in a
-small, inspectable package.
+- `The Source Files` are the girl at the center of town. Everybody talks about
+  her. She is the only one with the diary pages, the dates, the phone numbers,
+  the blood on the hem. If she disappears, everybody else's story loses
+  standing.
+- `The Windows` are scenes cut out of the long night. They keep line numbers,
+  hashes, and boundaries so the memory can move without pretending the whole
+  evening happened in one room.
+- `Embeddings` are gossip. Sometimes very good gossip. They help you find the
+  right street faster. They are not the law.
+- `Lexical search` is the old friend who still remembers the exact phrasing of
+  the fight.
+- `Relations` and `HippoRAG` are the switchboard, the family tree, the debt
+  ledger, the seating chart at the wedding where everyone secretly hates each
+  other. They help route attention toward the loaded scene. They do not get to
+  rewrite that scene.
+- `Compact Memory` is the note folded into the lining of your coat before you
+  run. The night was too big to carry whole, so you keep only what changes what
+  you do next.
+- `The Wake Bundle` is the opening shot of the next episode. Before anybody says
+  a word, you already know your name, your people, the unfinished business, and
+  what changed while you were gone.
+- `Recall` is the one honest witness in a corrupt town. It does not just answer.
+  It points.
 
-## Why The Name
+## How The Plot Moves
 
-The name is not decorative. Good memory is not a pile of detached summaries. It
-is continuity under cold wake, interruption, handoff, and return. The question
-is not whether a system can generate something that sounds familiar. The
-question is whether it can wake up and answer:
+This is how the city keeps itself from slipping into amnesia:
 
-1. What do I know?
-2. Why do I think I know it?
-3. Where is the source?
+1. Something real enters the system as source. A file, note, transcript,
+   document, profile, thread, customer record, project brief, whatever the
+   living thing is.
+2. The source is fingerprinted so later nobody can lie about whether it changed.
+3. The source is chunked into stable windows with line spans and hashes, because
+   memory without edges turns into soup.
+4. Derived layers spin up around those windows: embeddings, lexical indexes,
+   graph edges, relation rows, routing hints.
+5. Candidate memory gets staged, reviewed, compressed, promoted, or thrown back
+   if it cannot justify its existence.
+6. At wake, the system assembles a bounded orientation packet: identity,
+   continuity, scoped updates, relevant reminders, and just enough context to
+   begin without bluffing.
+7. When something load-bearing comes back from recall, the source gets re-read
+   before action. Not because the system is timid. Because it is honest.
+8. When the source changes, derived layers rebuild. The database can recover.
+   The files are the body.
 
-GitHub and package names need a slug, so the repository is
-`say-youll-remember-me`. The demo module is `source_linked_memory`, because that
-is the actual mechanism.
+That rebuild loop matters. This repo does not treat memory as a sacred final
+summary. It treats memory as a disciplined self-correction habit. The source
+changes, the windows change, the graph shifts, compact memory gets refreshed,
+the next wake remembers differently. No mysticism. Just continuity with receipts.
 
-## Blue Jeans, Red Flags
+## The House Rules
 
-Memory goes bad in predictable ways:
+This house has a few hard rules:
 
-- the summary becomes more authoritative than the source
-- embeddings get treated like truth instead of routing
-- one giant context pool replaces scoped recall
-- the wake starts blank and asks retrieval to invent continuity afterward
-- private operational memory gets flattened into product copy
+- Summary never outranks source.
+- Retrieval is routing, not authority.
+- A graph edge without provenance is just a beautifully typeset rumor.
+- Memory should be scoped before it is searched.
+- Wake should feel like remembering, not discovering.
+- If a fact cannot tell you where it came from, it does not get to make
+  decisions.
 
-This repo is built against those failure modes. It keeps the stains on the
-denim: file paths, line spans, hashes, scope, and provenance.
+Plenty of systems can sound persuasive. That is not rare. The rare thing is a
+system that can still point to the line when the lights come up.
 
-## Architecture In One Pass
+## What Was Smuggled Out
 
-```text
-source files
-  -> raw source records
-  -> source windows
-  -> embeddings / lexical indexes / graph edges
-  -> compact memory windows
-  -> scoped recall / wake bundle
-  -> source evidence re-read before action
-```
+This public repo copies the shape of a real production memory system into a safe
+separate home. Nothing in production was edited to make this. The live material
+was copied, distilled, and published here so the pattern can stand on its own.
 
-The index is a router, not the authority. The graph is allowed to help. The
-graph is not allowed to lie.
+Inside the repo, the contraband is laid out in three piles:
 
-## How The Memory Stays Honest
+- `real-system/` holds the production-shaped policies, schema notes, rebuild
+  material, wake adapter pieces, and the memory landscape that informed the
+  design.
+- `src/source_linked_memory/` holds a small portable demo implementation that
+  proves the contract without dragging the whole live organism into public view.
+- `docs/` holds the map for anyone who wants the legend after they finish the
+  story.
 
-Each source window carries enough metadata to prove where it came from:
-
-- `source_path`
-- `source_sha256`
-- `window_id`
-- `start_line`
-- `end_line`
-- `content_sha256`
-
-If the file changes, the hash changes. If the file disappears, the derived row
-is stale. That is the whole point: recall should degrade into caution, not bluff.
-
-The copied real-system SQL and notes show the same rule across:
-
-- raw source records
-- source windows
-- compact memory windows
-- staging/evaluation layers
-- embedding rows with source metadata
-
-## Graphs, Relations, and HippoRAG
-
-The live memory shape is not flat search. The real system carries `facts`,
-`relations`, source chunks, scoped wake state, and compact windows. Retrieval is
-scoped first, ranked second, and grounded always.
-
-In story terms: the graph is the seating chart, the family tree, the list of
-old flames, and the map of who owes what to whom. It helps you find the loaded
-scene faster. It does not get to rewrite what happened in that scene.
-
-This public export stays provider-agnostic on purpose. The demo uses plain token
-overlap because inspectability matters. The real contract is broad enough for:
-
-- pgvector
-- BM25
-- trigram search
-- graph rerankers
-- HippoRAG-style knowledge-graph routing
-
-Swap the retrieval engine if you want. Keep the provenance contract. A graph
-edge without a path back to source is still just a prettier hallucination.
-
-## The Self-Improvement Loop
-
-The memory system is not static storage. It is a controlled loop:
-
-1. Ingest raw source.
-2. Chunk it into stable windows with hashes and anchors.
-3. Build derived indexes, embeddings, and relations.
-4. Draft compact memory or staged candidate facts.
-5. Review and promote what deserves durable scope.
-6. Assemble a bounded wake bundle.
-7. Re-read source before acting on load-bearing hits.
-8. Rebuild derived layers whenever the source changes.
-
-That loop shows up across the copied rebuild material in
-`real-system/controlled-memory-rebuild/`, including staging fields, evaluation
-paths, namespace design, and the wake adapter boundary.
-
-## Wake First, Search Second
-
-Remembering starts before search. The copied
-`real-system/adapter/wake_bundle.sh` assembles bounded context at cold wake from:
-
-1. identity
-2. owner-scoped continuity
-3. facts new or updated since the last wake
-4. spaced re-encounter material
-5. a watermark update after assembly
-
-That is the design bet underneath the whole repo: a good wake should feel like
-remembering, not discovering.
-
-Or, less technically: every episode needs a strong opening scene.
+What is not here: credentials, private journals, customer data, live database
+dumps, raw internal transcripts, or any secret whose only purpose is privileged
+access. The omission ledger is in
+`docs/private-material-substitutions.md`.
 
 ## Not Just For Agents
 
-This export comes from an agent system, but the architecture is general. It can
-be used anywhere continuity needs evidence:
+This thing was born in an agent system, but it is not trapped there.
 
-- personal knowledge files
-- multi-agent orchestration
-- customer and domain operations
-- research notebooks
-- project memory
-- internal company memory
-- any workflow where recall should cite the thing it recalls
+It works for teams. It works for customers. It works for projects, archives,
+research notebooks, operations, family records, personal files, and any other
+place where "I remember" ought to mean "I can show you why."
 
-The details in `real-system/` are Paperclip-shaped because that is the live
-source. The contract itself is wider than Paperclip.
+The pattern is general:
 
-## Repo Map
+- keep raw source canonical
+- chunk it with stable anchors
+- derive indexes and graph structure from it
+- compress only what changes the next action
+- assemble bounded wake context before work starts
+- return to source whenever the answer matters
 
-- `docs/architecture.md`: concise system explanation
-- `docs/export-inventory.md`: what was copied and why
-- `docs/live-system-map.md`: how the copied real-system pieces fit together
-- `docs/private-material-substitutions.md`: public-safe omission ledger
-- `real-system/`: copied production-shaped policies, SQL, namespace docs, and
-  wake adapter material
-- `src/source_linked_memory/`: portable demo implementation
-- `examples/memory/`: minimal example memory tree
-- `scripts/demo_orientation.py`: runnable wake/orientation demo
-- `sql/001_schema.sql`: portable schema sketch
-- `tests/test_demo.py`: focused tests for the demo package
+You can swap in different retrieval engines. You can change providers. You can
+redraw the graph. You can rebuild the whole database from scratch. What you do
+not get to do, if you want this to stay honest, is sever memory from the file
+that made it true.
 
-## Copied Real-System Pieces
+## If You Want The Machinery
 
-The center of gravity is the `real-system/` tree:
+If you are here for implementation instead of myth, the code is already waiting.
 
-- `policy/POLICY_NO_EMBEDDINGS.md`
-- `policy/MEMORY_HYGIENE.md`
-- `controlled-memory-rebuild/NAMESPACE_BLUEPRINT.md`
-- `controlled-memory-rebuild/002_raw_source_import.sql`
-- `controlled-memory-rebuild/003_source_windows_embeddings.sql`
-- `controlled-memory-rebuild/004_compact_memory_windows.sql`
-- `controlled-memory-rebuild/SCHEMA_NOTES.md`
-- `controlled-memory-rebuild/VALIDATION.md`
-- `adapter/wake_bundle.sh`
-- `reference/memory-landscape.md`
+- Start in `src/source_linked_memory/`.
+- Read the copied rebuild material in `real-system/controlled-memory-rebuild/`.
+- Read the wake assembly path in `real-system/adapter/wake_bundle.sh`.
+- Run the orientation demo in `scripts/demo_orientation.py`.
 
-These are copied so the public repo exposes the real shape: source-link policy,
-namespace design, rebuild flow, compact memory windows, wake-time orientation,
-and the broader memory-provider landscape that informed the contract.
-
-## Quickstart
-
-Requires Python 3.11 or newer. There are no runtime dependencies.
-
-Run the orientation demo:
+Quick run:
 
 ```bash
 python3 scripts/demo_orientation.py \
@@ -233,46 +157,29 @@ python3 scripts/demo_orientation.py \
   --query "what should I know before editing the demo client site?"
 ```
 
-Run the tests:
+Tests:
 
 ```bash
 PYTHONPATH=src python3 -m unittest discover -s tests
 ```
 
-Install locally:
+Local install:
 
 ```bash
 python3 -m pip install -e .
 ```
 
-## Summertime Sadness
-
-What is intentionally not in this public export:
-
-- live database dumps
-- credentials, tokens, API keys, DSNs, and service-account material
-- customer records, emails, domains, private site content, or screenshots
-- agent-private journals and identity files
-- raw Paperclip issue/comment transcripts
-- infrastructure notes whose only value is privileged operational access
-
-The omission ledger is `docs/private-material-substitutions.md`.
-
-## The Contract
+## The Last Line
 
 Memory is allowed to be compact.
 
 Memory is allowed to be indexed.
 
-Memory is allowed to use embeddings, graph edges, rerankers, and scoped recall.
+Memory is allowed to flirt with embeddings, graph edges, rerankers, and all the
+other pretty things that gather outside the club.
 
 Memory is not allowed to forget where it came from.
 
-If a memory cannot tell you its source, it is not memory. It is rumor with a
-database row.
+If it cannot point back to source, it is not memory.
 
-## GitHub
-
-- Repo: https://github.com/Digital-Disconnections-LTD/say-youll-remember-me
-- Branch: `main`
-- Visibility: `public`
+It is a rumor with better lighting.
