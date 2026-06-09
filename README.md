@@ -13,6 +13,28 @@ If the source disappears, the memory loses standing.
 
 > The database can be rebuilt. The files are the memory.
 
+## The Story Version
+
+If the code version feels like a locked diary, here is the soap-opera version.
+
+- `The Source Files` are the woman at the center of the story. Everybody else
+  talks. She has the receipts.
+- `The Windows` are the scenes cut out of the long night so the memory can be
+  carried from room to room without losing the plot.
+- `The Graph` and `Relations` are the sideways looks, old loyalties, bad blood,
+  and who is still tied to whom when the music comes back on.
+- `Compact Memory` is the sunrise version: the thing you can actually hold in
+  your hands when the night was too large to carry whole.
+- `The Wake Bundle` is the opening shot of the next episode. Before anyone says
+  a word, you already know who you are, what happened last night, and which
+  unfinished business just walked back through the door.
+- `Recall` is the friend who stops the rumor and points back to the exact page,
+  the exact line, the exact moment.
+
+That is the whole romance of the system. It does not ask a machine to invent a
+past that sounds plausible. It asks the machine to return to the scene of the
+crime and speak with evidence.
+
 ## What This Is
 
 This repo is not a hosted memory SaaS, a dashboard, or a vibes-only demo.
@@ -101,6 +123,10 @@ The live memory shape is not flat search. The real system carries `facts`,
 `relations`, source chunks, scoped wake state, and compact windows. Retrieval is
 scoped first, ranked second, and grounded always.
 
+In story terms: the graph is the seating chart, the family tree, the list of
+old flames, and the map of who owes what to whom. It helps you find the loaded
+scene faster. It does not get to rewrite what happened in that scene.
+
 This public export stays provider-agnostic on purpose. The demo uses plain token
 overlap because inspectability matters. The real contract is broad enough for:
 
@@ -143,6 +169,8 @@ Remembering starts before search. The copied
 
 That is the design bet underneath the whole repo: a good wake should feel like
 remembering, not discovering.
+
+Or, less technically: every episode needs a strong opening scene.
 
 ## Not Just For Agents
 
