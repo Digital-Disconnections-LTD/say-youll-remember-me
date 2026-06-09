@@ -1,54 +1,56 @@
 # Export Inventory
 
-This repo is a public-safe distillation, not a production copy.
+This repo is a public carbon-copy-style export of the Digital Disconnections
+memory system shape. It is not a live production checkout, and production memory
+infrastructure was not edited in place.
 
-## Copied Verbatim
+## Copied From The Real System
 
-No private production memory, customer records, live database dumps, secrets, agent
-private files, or internal transcripts were copied verbatim.
+- `real-system/policy/POLICY_NO_EMBEDDINGS.md`
+- `real-system/policy/MEMORY_HYGIENE.md`
+- `real-system/controlled-memory-rebuild/NAMESPACE_BLUEPRINT.md`
+- `real-system/controlled-memory-rebuild/001_dream_staging_fields.sql`
+- `real-system/controlled-memory-rebuild/002_raw_source_import.sql`
+- `real-system/controlled-memory-rebuild/003_source_windows_embeddings.sql`
+- `real-system/controlled-memory-rebuild/004_compact_memory_windows.sql`
+- `real-system/controlled-memory-rebuild/SCHEMA_NOTES.md`
+- `real-system/controlled-memory-rebuild/VALIDATION.md`
+- `real-system/adapter/wake_bundle.sh`
+- `real-system/reference/memory-landscape.md`
 
-## Distilled From Internal Sources
+These files were copied from the separate live source tree into this repo. Their
+job is to expose the actual shape: namespace, source windows, compact memory
+windows, source-link policy, wake orientation, and provider landscape.
 
-The public architecture and scaffold were distilled from these internal source
-classes:
+## Runnable Demo Layer
 
-- Approved memory-system proposal: scoped/source-linked memory, wake orientation,
-  and "read path first" ordering.
-- Controlled memory rebuild plans: raw source import, source windows, compact memory
-  windows, adapter recall, validation, and namespace notes.
-- Memory landscape survey: provider-agnostic primitives such as ingest, query,
-  scope, provenance, maintenance, and context assembly.
-- Embeddings policy: embeddings may be used only as a source-linked retrieval path.
-- Remembering-not-discovering notes: wake bundles, always-resident self, source-first
-  recall, modules, and recall-as-fallback.
-- Current implementation paths: wake-bundle scripts, source-window/retrieval sketches,
-  and SQL migration shape.
+The package under `src/source_linked_memory/`, the tiny `examples/memory/` tree,
+and `sql/001_schema.sql` remain a small executable demo. They are intentionally
+lighter than `real-system/` because their purpose is smoke-testable mechanics:
 
-The wording, filenames, examples, and code in this repo are new public-safe material.
+- chunk a source file into deterministic windows
+- keep source hashes and line spans
+- rank recall candidates
+- assemble a bounded orientation bundle
 
-## Intentionally Excluded
+## Omitted Because Public GitHub Cannot Carry Them
 
-- Company IDs, agent IDs, run IDs, issue IDs, and customer identifiers except as
-  generic examples.
-- Production filesystem paths.
-- Paperclip API credentials, Postgres credentials, and service-account configuration.
-- Real customer/site content.
-- Agent private memory files and journals.
-- Production SQL dumps or live schema dumps.
-- Internal model routing details that include private providers or account setup.
-- Any material from internal session transcripts.
+- live database dumps
+- credentials, tokens, API keys, DSNs, service-account files, and local secret paths
+- customer records, customer emails, private domains, private site content, or screenshots
+- agent-private memory files, journals, and identity files
+- raw Paperclip issue/comment transcripts
+- infrastructure notes whose only value is private operational access
 
-## Public-Safe Substitutions
+## Substitutions
 
-- `examples/memory/modules/demo-client/` stands in for a customer/project module.
-- `examples/memory/sources/demo-client-request.md` stands in for a source transcript
-  or issue comment.
-- `scripts/demo_orientation.py` stands in for a harness boundary injection step.
-- `sql/001_schema.sql` is a portable schema sketch, not a migration from a live DB.
+- `examples/memory/` stands in for private agent/customer memory.
+- `sql/001_schema.sql` stands in for a runnable local demo schema.
+- The real adapter script remains copied in `real-system/adapter/wake_bundle.sh`,
+  but it expects local environment variables instead of shipping secrets.
 
-## Remaining Public Copy Work
+## Project Identity
 
-Sage/June can rewrite the README tone and naming once the architecture is accepted.
-The public copy should preserve the source-linked invariant and avoid presenting this
-as a hosted product.
+Canonical public name: **Say You'll Remember Me**.
 
+Technical slug: `say-youll-remember-me`.

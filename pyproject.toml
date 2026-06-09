@@ -1,7 +1,7 @@
 [project]
-name = "source-linked-agent-memory"
+name = "say-youll-remember-me"
 version = "0.1.0"
-description = "Public-safe scaffold for source-linked task-agent memory."
+description = "Source-linked fleet memory export from Digital Disconnections."
 requires-python = ">=3.11"
 dependencies = []
 
@@ -11,4 +11,3 @@ build-backend = "setuptools.build_meta"
 
 [tool.setuptools.packages.find]
 where = ["src"]
-
